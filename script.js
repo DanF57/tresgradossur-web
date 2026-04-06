@@ -109,27 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* -----------------------------------------------------------------------
-       4. ACTIVE NAV LINKS — scroll spy
-    ----------------------------------------------------------------------- */
-    const sections = document.querySelectorAll('section[id], footer[id]');
-    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-
-    const spyObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.getAttribute('id');
-                navLinks.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-                });
-            }
-        });
-    }, { threshold: 0.4 });
-
-    sections.forEach(s => spyObserver.observe(s));
-
-
-    /* -----------------------------------------------------------------------
-       5. FAB PULSE — subtle attention animation after delay
+       4. FAB PULSE — subtle attention animation after delay
     ----------------------------------------------------------------------- */
     const fab = document.querySelector('.wa-fab');
     if (fab) {
@@ -147,19 +127,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(fabStyle);
-
-
-    /* -----------------------------------------------------------------------
-       7. GALLERY CARD GLOW on hover — amber edge glow
-    ----------------------------------------------------------------------- */
-    beerCards.forEach(card => {
-        if (card.classList.contains('gallery-card--soon')) return;
-        card.addEventListener('mouseenter', () => {
-            card.style.boxShadow = '0 0 40px -10px rgba(212,148,42,0.3), 0 20px 40px rgba(0,0,0,0.35)';
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.boxShadow = '';
-        });
-    });
 
 });
