@@ -30,6 +30,10 @@
         <div class="nav-inner">
             <a href="#inicio" class="nav-logo-link">
                 <img src="./images/logo.webp" alt="Tres Grados Sur" class="nav-logo nav-logo--dark">
+                <span class="nav-logo-wordmark">
+                    <span class="nav-logo-name">Tres Grados Sur</span>
+                    <span class="nav-logo-tag">Mechanical Beer Co.</span>
+                </span>
             </a>
 
             <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
@@ -40,8 +44,10 @@
 
     <!-- Mobile fullscreen nav (outside navbar to avoid backdrop-filter containing block) -->
     <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
-        <a href="#" class="nav-link nav-link--soon">La Mecánica <span class="soon-pill">Próximamente</span></a>
-        <a href="#eventos" class="nav-link">Nuestros Eventos</a>
+        <a href="#cervezas" class="nav-link">Cervezas</a>
+        <a href="#historia" class="nav-link">Historia</a>
+        <a href="#eventos" class="nav-link">Eventos</a>
+        <a href="#" class="nav-link nav-link--soon">La Mecánica <span class="soon-pill">Pronto</span></a>
         <a href="#contacto" class="nav-link">Contacto</a>
         <a href="https://wa.me/yourlink" class="nav-cta" target="_blank" rel="noopener">
             <span class="material-symbols-outlined">chat</span> Pedir ahora
@@ -51,36 +57,32 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="inicio">
         <div class="hero-media">
-            <img src="./images/cervezas-horizontal_right.png" alt="Cerveza artesanal Tres Grados Sur" class="hero-img">
-            <div class="hero-vignette"></div>
+            <img src="./images/1920.jpg" alt="Cerveza artesanal Tres Grados Sur" class="hero-img">
+            <div class="hero-vignette" aria-hidden="true"></div>
         </div>
 
         <div class="hero-content">
             <div class="hero-kicker">
-                <span class="diamond">&#9670;</span>
-                <span>Mechanical Beer Co.</span>
-                <span class="diamond">&#9670;</span>
+                <span class="hero-kicker-line"></span>
+                <span class="hero-kicker-text">Cerveza Artesanal Lojana </span>
             </div>
             <h1 class="hero-headline">
                 <span class="hero-line">Tres</span>
                 <span class="hero-line">Grados</span>
-                <span class="hero-line">Sur</span>
+                <span class="hero-line hero-line--accent">Sur</span>
             </h1>
-            <p class="hero-sub">Elaborada con pasi&oacute;n y precisi&oacute;n mec&aacute;nica a 3&deg; 59&apos;
-                26&apos;&apos; al sur del
-                Ecuador.</p>
+            <p class="hero-sub">Cerveza artesanal forjada con pasi&oacute;n y precisi&oacute;n mec&aacute;nica
+                a&nbsp;<strong>3&deg;&nbsp;59&prime;&nbsp;26&Prime;</strong> al sur del Ecuador.</p>
             <div class="hero-actions">
                 <a href="https://wa.me/yourlink" class="btn btn--amber" target="_blank" rel="noopener">
                     Haz tu pedido
                     <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
-                <a href="#cervezas" class="btn btn--ghost">Ver cervezas</a>
+                <a href="#cervezas" class="btn btn--ghost">
+                    Ver cervezas
+                    <span class="material-symbols-outlined">arrow_downward</span>
+                </a>
             </div>
-        </div>
-
-        <div class="hero-scroll-hint" aria-hidden="true">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
         </div>
     </section>
 
@@ -89,15 +91,18 @@
         <div class="container">
             <div class="section-header reveal">
                 <p class="eyebrow">
-                    <span class="diamond">&#9670;</span> El Garaje
+                    <span class="diamond">&#9670;</span> El Garaje &middot; Cat&aacute;logo
                 </p>
                 <h2 class="section-title">Nuestras Cervezas</h2>
-                <p class="section-subtitle">Cada variedad, una pieza de ingeniera bielera.</p>
+                <p class="section-subtitle">Cada variedad, una pieza de ingenier&iacute;a cervecera. Recetas
+                    forjadas en planos, vertidas con precisi&oacute;n.</p>
             </div>
 
             <!-- Filter Pills -->
             <div class="filters reveal" role="group" aria-label="Filtrar por estilo">
-                <button class="filter-btn active" data-filter="all">Todo</button>
+                <button class="filter-btn active" data-filter="all">
+                    <span class="material-symbols-outlined">apps</span> Todas
+                </button>
                 <button class="filter-btn" data-filter="ale">Ales</button>
                 <button class="filter-btn" data-filter="stout">Stouts</button>
                 <button class="filter-btn" data-filter="ipa">IPAs</button>
@@ -284,8 +289,7 @@
     <!-- ===== TEMPORADA ESPECIAL ===== -->
     <section class="section section--season" id="eventos">
         <div class="season-bg">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbCOQIPw0SLS9cepEmdWki2B6uc87iviqvIfzaLMNtgXubJkeXOcQMvLjP9JUq9dG_r6Ci7TDq1rfJ9ogGfPIIWQ4-JiFF1vLePCqB_wbRK4OcyARpBQMEW2uRNVXLlTvxKmxrjgbSmtV1lsc1DlPEtv-7YNtGAK79cygpA7PZjpiPdsv_OhY8kDdzBJqSrYSvpScYje92FWFOMp12RqWUPVsOmfSohfmwP3RqO1fcRAPxUiw0aqtcj8Hb4kPhWZ9KRF9popPoXBJf"
-                alt="Cerveza de temporada" class="season-img">
+            <img src="" alt="Cerveza de temporada" class="season-img">
             <div class="season-vignette"></div>
         </div>
         <div class="container season-content reveal">
